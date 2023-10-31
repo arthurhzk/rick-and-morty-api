@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import ViewCharacters from "@/views/ViewCharacters/ViewCharacters.vue";
 import ViewCharacterDetail from "@/views/ViewCharacters/ViewCharacterDetail.vue";
+import ViewFavorites from "@/views/ViewCharacters/ViewFavorites.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -13,6 +14,11 @@ const router = createRouter({
       path: "/characterDetail/:id",
       name: "characterDetail",
       component: ViewCharacterDetail,
+    },
+    {
+      path: "/favorites",
+      name: "favorites",
+      component: ViewFavorites,
     },
   ],
 });

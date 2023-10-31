@@ -8,6 +8,7 @@ const useStoreCharacters = defineStore("storeCharacters", {
       name: "",
       loading: false,
       character: {},
+      favorites: [],
     };
   },
   actions: {
@@ -40,6 +41,15 @@ const useStoreCharacters = defineStore("storeCharacters", {
         return error;
       }
     },
+    addFavorite(character) {
+      const alreadyFavorite = this.favorites.find(
+        (char) => char.id === character.id
+      );
+      if (!alreadyFavorite) {
+        this.favorites.push(character);
+      }
+    },
+    persist: true,
   },
 });
 
