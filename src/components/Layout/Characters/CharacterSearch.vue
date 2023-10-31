@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center justify-center">
     <input
-      class="the-input"
+      class="the-input pl-5"
       type="text"
       @input="$emit('update:modelValue', $event.target.value)"
       placeholder="Search a character..."

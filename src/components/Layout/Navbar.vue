@@ -6,8 +6,7 @@
 
     <div class="nav-color">
       <RouterLink to="/" class="mr-4">Characters</RouterLink>
-      <RouterLink to="/episodes" class="mr-4">Episodes</RouterLink>
-      <RouterLink to="/locations" class="mr-4">Locations</RouterLink>
+
       <RouterLink to="/favorites" class="mr-4">Favorites</RouterLink>
     </div>
   </nav>
